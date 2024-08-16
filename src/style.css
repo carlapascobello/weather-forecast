@@ -96,8 +96,9 @@ p.current-details {
 footer {
   border-top: 1px solid #f9f7fe;
   text-align: center;
-  padding-top: 5px;
+  padding-top: 25px;
   color: rgba(39, 33, 66, 0.4);
+  font-size: 15px;
 }
 
 a {
@@ -127,6 +128,7 @@ ul {
 .forecast-temperatures {
   display: flex;
   justify-content: space-around;
+  margin-bottom: 15px;
 }
 
 .temperature-1 {
