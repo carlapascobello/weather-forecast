@@ -1,0 +1,156 @@
+body {
+  background: #e2dfd86d;
+}
+
+.main-container {
+  background: white;
+  display: block;
+  margin: 60px auto;
+  max-width: 600px;
+  padding: 40px 30px;
+  border-radius: 10px;
+  font-family: "Roboto", sans-serif;
+  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+}
+header {
+  border-bottom: 1px solid #f9f7fe;
+  padding-bottom: 30px;
+}
+
+form {
+  width: 100%;
+  height: 50px;
+  display: block;
+  margin-top: 0em;
+}
+
+#search-city {
+  background: #e2dfd86d;
+  width: 75%;
+  border: none;
+  font-size: 16px;
+  color: rgba(39, 33, 66, 0.4);
+  padding: 15px;
+  border-radius: 6px;
+}
+
+.submit-form {
+  margin-left: 5px;
+  font-size: 16px;
+  background-color: #132c50;
+  color: #e2dfd8;
+  border: none;
+  padding: 15px;
+  line-height: 1;
+  border-radius: 5px;
+  width: 22%;
+}
+
+main {
+  padding: 40px 0;
+}
+
+.current-weather {
+  display: flex;
+  justify-content: space-between;
+}
+
+.current-city {
+  font-size: 38px;
+  font-weight: 900;
+  margin: 0;
+}
+
+p.current-details {
+  color: rgba(39, 33, 66, 0.4);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.current-temperature {
+  font-size: 48px;
+}
+
+.current-temperature-icon {
+  position: relative;
+  top: -8px;
+  font-size: 40px;
+  margin-right: -11px;
+}
+
+.current-temperature-value {
+  font-size: 80px;
+  font-weight: bold;
+  position: relative;
+  right: -11px;
+}
+
+.current-temperature-unit {
+  font-size: 28px;
+  position: relative;
+  top: -38px;
+  font-weight: 600;
+}
+
+footer {
+  border-top: 1px solid #f9f7fe;
+  text-align: center;
+  padding-top: 5px;
+  color: rgba(39, 33, 66, 0.4);
+}
+
+a {
+  color: #132c50a1;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.daily-forecasts {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.forecast-day {
+  color: rgba(39, 33, 66, 0.4);
+}
+
+.forecast-emoji {
+  font-size: 45px;
+  padding: 20px;
+}
+
+.forecast-temperatures {
+  display: flex;
+  justify-content: space-around;
+}
+
+.temperature-1 {
+  font-weight: 700;
+}
+
+span.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+  font-size: 40px;
+}
+
+/* colors */
+.current-city,
+.current-temperature-value,
+.current-temperature-unit {
+  color: #132c50;
+}
+
+.current-temperature-icon,
+.current-details strong,
+.forecast-temperatures {
+  color: #c1914d;
+}
+
+.forecast-emoji {
+  color: #132c50c5;
+}

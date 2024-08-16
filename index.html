@@ -3,27 +3,132 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="src/styles.css" />
+    <title>My weather application</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!---sunny day icon-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <!---partly cloudy day icon-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <!---rainy day icon-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
   </head>
   <body>
-    <h1>weather forecast</h1>
-    <footer>
-      Coded by
-      <a href="https://github.com/carlapascobello" target="_blank"
-        >Carla Pascobello</a
-      >
-      , is
-      <a
-        href="https://github.com/carlapascobello/weather-forecast"
-        target="_blank"
-        >open-sourced on Github</a
-      >
-      and
-      <a
-        href="https://app.netlify.com/sites/weather-forecast-project-shecodes/deploys"
-        target="_blank"
-        >hosted on Netllify</a
-      >.
-    </footer>
+    <div class="main-container">
+      <header>
+        <form>
+          <input
+            type="search"
+            placeholder="Enter a city.."
+            id="search-city"
+            required
+          />
+          <input type="submit" value="Search" class="submit-form" />
+        </form>
+      </header>
+      <main>
+        <div class="current-weather">
+          <div>
+            <h1 class="current-city">Barcelona</h1>
+            <p class="current-details">
+              Lunes 12:00, hace sol <br />
+              Humidity: <strong>51%</strong>, Wind: <strong>10km/h</strong>
+            </p>
+          </div>
+          <div class="current-temperature">
+            <span class="current-temperature-icon"
+              ><span class="material-symbols-outlined"> sunny </span></span
+            >
+            <span class="current-temperature-value">24</span>
+            <span class="current-temperature-unit">°C</span>
+          </div>
+        </div>
+      </main>
+      <section class="forecast">
+        <div class="daily-forecasts">
+          <ul class="forecast-1">
+            <li class="forecast-day">Mar</li>
+            <li class="forecast-emoji">
+              <span class="material-symbols-outlined"> partly_cloudy_day </span>
+            </li>
+            <li class="forecast-temperatures">
+              <span class="temperature-1">35°</span>
+              <span class="temperature-2">23°</span>
+            </li>
+          </ul>
+          <ul class="forecast-2">
+            <li class="forecast-day">Mié</li>
+            <li class="forecast-emoji">
+              <span class="material-symbols-outlined"> sunny </span>
+            </li>
+            <li class="forecast-temperatures">
+              <span class="temperature-1">34°</span>
+              <span class="temperature-2">23°</span>
+            </li>
+          </ul>
+          <ul class="forecast-3">
+            <li class="forecast-day">Jue</li>
+            <li class="forecast-emoji">
+              <span class="material-symbols-outlined"> sunny </span>
+            </li>
+            <li class="forecast-temperatures">
+              <span class="temperature-1">32°</span>
+              <span class="temperature-2">23°</span>
+            </li>
+          </ul>
+          <ul class="forecast-4">
+            <li class="forecast-day">Vie</li>
+            <li class="forecast-emoji">
+              <span class="material-symbols-outlined"> partly_cloudy_day </span>
+            </li>
+            <li class="forecast-temperatures">
+              <span class="temperature-1">31°</span>
+              <span class="temperature-2">22°</span>
+            </li>
+          </ul>
+          <ul class="forecast-5">
+            <li class="forecast-day">Sáb</li>
+            <li class="forecast-emoji">
+              <span class="material-symbols-outlined"> rainy </span>
+            </li>
+            <li class="forecast-temperatures">
+              <span class="temperature-1">31°</span>
+              <span class="temperature-2">22°</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <footer>
+        Coded by
+        <a href="https://github.com/carlapascobello" target="_blank"
+          >Carla Pascobello</a
+        >
+        , is
+        <a
+          href="https://github.com/carlapascobello/weather-forecast"
+          target="_blank"
+          >open-sourced on Github</a
+        >
+        and
+        <a
+          href="https://app.netlify.com/sites/weather-forecast-project-shecodes/deploys"
+          target="_blank"
+          >hosted on Netllify</a
+        >.
+      </footer>
+    </div>
   </body>
 </html>
