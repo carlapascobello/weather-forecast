@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="src/styles.css" />
     <title>My weather application</title>
     <link rel="stylesheet" href="src/style.css" />
     <link
@@ -29,8 +28,9 @@
   <body>
     <div class="main-container">
       <header>
-        <form>
+        <form id="#search-city-form">
           <input
+            id="search-city"
             type="search"
             placeholder="Enter a city.."
             id="search-city"
@@ -44,7 +44,10 @@
           <div>
             <h1 class="current-city">Barcelona</h1>
             <p class="current-details">
-              Lunes 12:00, hace sol <br />
+              <span id="current-day">Lunes</span>
+              <span id="current-hour">12</span>:<span id="current-minutes"
+                >00</span
+              >, hace sol <br />
               Humidity: <strong>51%</strong>, Wind: <strong>10km/h</strong>
             </p>
           </div>
@@ -130,5 +133,6 @@
         >.
       </footer>
     </div>
+    <script src="src/script.js"></script>
   </body>
 </html>
