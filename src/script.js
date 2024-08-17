@@ -28,3 +28,12 @@ function currentDateDetails() {
 }
 
 currentDateDetails();
+
+function searchCity(event) {
+  event.preventDefault();
+  let cityInput = document.querySelector("#search-city");
+  cityInput.innerHTML = `${cityInput.value}`;
+}
+
+let searchForm = document.querySelector("#search-city-form");
+searchForm.addEventListener("submit", searchCity);
