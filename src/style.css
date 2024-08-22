@@ -37,7 +37,7 @@ form {
 .submit-form {
   margin-left: 5px;
   font-size: 16px;
-  background-color: #132c50;
+  background-color: #383653;
   color: #e2dfd8;
   border: none;
   padding: 15px;
@@ -103,7 +103,7 @@ footer {
 }
 
 a {
-  color: #132c50a1;
+  color: #383653;
 }
 
 ul {
@@ -111,6 +111,7 @@ ul {
   padding: 0;
 }
 
+/*
 .daily-forecasts {
   display: flex;
   justify-content: space-around;
@@ -141,11 +142,15 @@ span.material-symbols-outlined {
   font-size: 40px;
 }
 
-/* colors */
+// colors 
+*/
+
 .current-city,
 .current-temperature-value,
 .current-temperature-unit {
-  color: #132c50;
+  color: #383653;
+
+  /* #132c50m */
 }
 
 .current-temperature-icon,
