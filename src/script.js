@@ -25,3 +25,14 @@ function currentDateDetails() {
 }
 
 currentDateDetails();
+
+function handleSearchSubmit(event) {
+  event.preventDefault();
+  let searchInput = document.querySelector("#search-city");
+  searchInput = searchInput.value;
+  let cityElement = document.querySelector("#current-city");
+  cityElement.innerHTML = searchInput;
+}
+
+let searchFormElement = document.querySelector("#search-city-form");
+searchFormElement.addEventListener("submit", handleSearchSubmit);
