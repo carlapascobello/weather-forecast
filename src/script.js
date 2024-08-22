@@ -11,29 +11,17 @@ function currentDateDetails() {
     "Saturday",
   ];
   let day = now.getDay();
-  let htmlDay = document.querySelector("#current-day");
-  htmlDay.innerHTML = days[day];
-
   let hour = now.getHours();
-  let htmlHour = document.querySelector("#current-hour");
-  htmlHour.innerHTML = hour;
-
   let minutes = now.getMinutes();
-  let htmlMinutes = document.querySelector("#current-minutes");
   if (minutes >= 10) {
-    htmlMinutes.innerHTML = minutes;
+    minutes = minutes;
   } else {
-    htmlMinutes.innerHTML = `0${minutes}`;
+    minutes = `0${minutes}`;
   }
+
+  let currentDate = `${days[day]} ${hour}:${minutes}`;
+  let htmlTime = document.querySelector("#current-day-and-time");
+  htmlTime.innerHTML = currentDate;
 }
 
 currentDateDetails();
-
-function searchCity(event) {
-  event.preventDefault();
-  let cityInput = document.querySelector("#search-city");
-  cityInput.innerHTML = `${cityInput.value}`;
-}
-
-let searchForm = document.querySelector("#search-city-form");
-searchForm.addEventListener("submit", searchCity);
