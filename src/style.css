@@ -111,34 +111,33 @@ ul {
   padding: 0;
 }
 
-.daily-forecasts {
+.forecast {
   display: flex;
   justify-content: space-around;
   text-align: center;
 }
 
 .forecast-day {
+  text-align: center;
   color: rgba(39, 33, 66, 0.4);
+  margin-bottom: 10px;
 }
 
 .forecast-emoji {
-  font-size: 45px;
-  padding: 20px;
+  text-align: center;
+  font-size: 38px;
 }
 
 .forecast-temperatures {
+  text-align: center;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   margin-bottom: 15px;
 }
 
-.temperature-1 {
-  font-weight: 700;
-}
-
-span.material-symbols-outlined {
-  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
-  font-size: 40px;
+.forecast-temperature {
+  padding: 0 10px;
+  margin-top: 10px;
 }
 
 /* colors */
