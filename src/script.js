@@ -73,8 +73,6 @@ function formatDay(timestamp) {
 }
 
 function displayForecast(response) {
-  console.log(response.data);
-
   forecastHTML = "";
 
   response.data.daily.forEach(function (day, index) {

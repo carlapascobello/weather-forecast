@@ -37,7 +37,7 @@ form {
 .submit-form {
   margin-left: 5px;
   font-size: 16px;
-  background-color: #383653;
+  background-color: #132c50;
   color: #e2dfd8;
   border: none;
   padding: 15px;
@@ -147,7 +147,7 @@ ul {
 .current-city,
 .current-temperature-value,
 .current-temperature-unit {
-  color: #383653;
+  color: #132c50;
 
   /* #132c50m */
 }
