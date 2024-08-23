@@ -47,7 +47,7 @@ form {
 }
 
 main {
-  padding: 40px 0 15px 0;
+  padding: 40px 0 30px 0;
 }
 
 .current-weather {
@@ -124,8 +124,10 @@ ul {
 }
 
 .forecast-emoji {
-  text-align: center;
-  font-size: 38px;
+  display: block;
+  margin: 0 auto;
+  width: 48px;
+  height: 48px;
 }
 
 .forecast-temperatures {
@@ -136,7 +138,7 @@ ul {
 }
 
 .forecast-temperature {
-  padding: 0 10px;
+  padding: 0 8px;
   margin-top: 10px;
 }
 
