@@ -47,7 +47,7 @@ form {
 }
 
 main {
-  padding: 40px 0;
+  padding: 40px 0 15px 0;
 }
 
 .current-weather {
@@ -111,7 +111,6 @@ ul {
   padding: 0;
 }
 
-/*
 .daily-forecasts {
   display: flex;
   justify-content: space-around;
@@ -142,8 +141,7 @@ span.material-symbols-outlined {
   font-size: 40px;
 }
 
-// colors 
-*/
+/* colors */
 
 .current-city,
 .current-temperature-value,
